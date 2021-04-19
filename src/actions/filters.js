@@ -3,7 +3,7 @@ export const setTextFilter = (text = '') => ({
   text
 });
 
-export const sortBy = (sortBy) => ({
+export const setSortBy = (sortBy) => ({
   type: 'SORT_BY',
   sortBy
 });
