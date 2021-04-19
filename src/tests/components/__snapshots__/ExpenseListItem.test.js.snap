@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EspenseListItem component 1`] = `
+<div>
+  <h3>
+    <Link
+      to="/edit/2"
+    >
+      Rent
+    </Link>
+  </h3>
+  <p>
+    Amount: 
+    109500
+     - Create at: 
+    -345600000
+  </p>
+</div>
+`;
