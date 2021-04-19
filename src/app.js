@@ -11,7 +11,6 @@ import 'react-dates/lib/css/_datepicker.css';
 import moment from 'moment';
 
 const store = configureStore();
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />
