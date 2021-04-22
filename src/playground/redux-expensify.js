@@ -116,7 +116,7 @@ const filtersReducer = ((state = filtersReducerDefault, action) => {
   }
 });
 
-const getVisibleExpenses = (expenses, {text, sortBy, startDate, endDate}) => {
+const getExpenses = (expenses, {text, sortBy, startDate, endDate}) => {
   return expenses.filter((expense) => {
     const startDateMatch = typeof startDate !== 'number' || expense.createdAt >= startDate;
     const endDateMatch = typeof endDate !== 'number' || expense.createdAt <= endDate;
@@ -141,8 +141,8 @@ const store = createStore(
 
 store.subscribe(() => {
   const state = store.getState();
-  const visibleExpense = getVisibleExpenses(state.expenses, state.filters);
-  console.log(visibleExpense);
+  const Expense = getExpenses(state.expenses, state.filters);
+  console.log(Expense);
 });
 
 
